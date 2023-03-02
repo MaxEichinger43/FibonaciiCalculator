@@ -32,12 +32,18 @@ namespace FibonCalc
                 List<int> Fibonaceifolge = new List<int>();
                 Fibonaceifolge.Add(1);
                 Fibonaceifolge.Add(1);
-
-                for (int i = 2; i == (n + 1); i++)
+                
+                int a = 2;
+                while (a < n)
                 {
-                    Fibonaceifolge.Add(Fibonaceifolge[i-1] + Fibonaceifolge[i-2]);
+                    Fibonaceifolge.Add(Fibonaceifolge[a-1] + Fibonaceifolge[a-2]);
+                    a++;
                 }
 
+//                for (int i = 1; i < Fibonaceifolge.Count; i++)
+//                {
+//                Console.WriteLine(Fibonaceifolge[i-1]);
+//                }
 
                 Console.WriteLine("Die " + n + ". Stelle ist eine " + Fibonaceifolge[n - 1]);
                 
