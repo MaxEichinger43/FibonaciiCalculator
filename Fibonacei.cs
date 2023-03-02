@@ -18,7 +18,7 @@ namespace FibonCalc
                 int a = Convert.ToInt32(Console.ReadLine());
 
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Sollen die Schritte bis zu Gesuchten auch angezeit werden?  (true/false)");
+                Console.WriteLine("Sollen die Schritte bis zu Gesuchten auch angezeigt werden?  (true/false)");
                 Console.ForegroundColor = ConsoleColor.White;
                 bool optionalOutput = Convert.ToBoolean(Console.ReadLine());
                 Console.WriteLine("So sei es!");
