@@ -10,15 +10,21 @@ namespace FibonCalc
                 Console.Title = "Fibonacei Calculator";
 
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Wie viele Versuche möchtest du haben?");
+                Console.WriteLine("Wie viele Versuche möchtest du haben?  (int)");
                 Console.ForegroundColor = ConsoleColor.White;
-
                 int a = Convert.ToInt32(Console.ReadLine());
+
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Sollen die Schritte bis zu Gesuchten auch angezeit werden?  (true/false)");
+                Console.ForegroundColor = ConsoleColor.White;
+                bool optionaleroutput = Convert.ToBoolean(Console.ReadLine());
+                Console.WriteLine("So sei es!");
+
 
 
                 for (int i = 0; i < a; i++)
                 {
-                    Program();
+                    Program(optionaleroutput);
                 }
 
 
@@ -28,10 +34,10 @@ namespace FibonCalc
                 Console.ReadKey();
             }
 
-            static void Program()
+            static void Program(bool optionaleroutput)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("\nWelche Stelle der Fibonacei Folge möchtest du wissen?");
+                Console.WriteLine("\nWelche Stelle der Fibonacei Folge möchtest du wissen?   (int)");
                 Console.ForegroundColor = ConsoleColor.White;
                 int n = Convert.ToInt32(Console.ReadLine());
 
@@ -48,7 +54,10 @@ namespace FibonCalc
                 }
 
 //Falls alle Stellen bis zur gefragten Eingegebenwerden ausgegeben werden sollen
-//                Console.WriteLine("\n.......");for (int i = 1; i < Fibonaceifolge.Count; i++){Console.WriteLine(Fibonaceifolge[i-1]);}
+                if (optionaleroutput == true)
+                {
+                    Console.WriteLine("\n.......");for (int i = 1; i < Fibonaceifolge.Count; i++){Console.WriteLine(Fibonaceifolge[i-1]);}
+                }
                 
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Die " + n + ". Stelle ist eine:"); Console.ForegroundColor = ConsoleColor.Green; Console.Write(Fibonaceifolge[n - 1]);
