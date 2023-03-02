@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\m.eichinger\\Documents\\FibonCalc\\FibonCalc.csproj",
+      "projectUniqueName": "C:\\Users\\m.eichinger\\Documents\\FibonCalc\\FibonaceiCalculator\\FibonCalc\\FibonCalc.csproj",
       "projectName": "FibonCalc",
-      "projectPath": "c:\\Users\\m.eichinger\\Documents\\FibonCalc\\FibonCalc.csproj",
+      "projectPath": "C:\\Users\\m.eichinger\\Documents\\FibonCalc\\FibonaceiCalculator\\FibonCalc\\FibonCalc.csproj",
       "packagesPath": "C:\\Users\\m.eichinger\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\m.eichinger\\Documents\\FibonCalc\\obj\\",
+      "outputPath": "C:\\Users\\m.eichinger\\Documents\\FibonCalc\\FibonaceiCalculator\\FibonCalc\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\m.eichinger\\AppData\\Roaming\\NuGet\\NuGet.Config"
