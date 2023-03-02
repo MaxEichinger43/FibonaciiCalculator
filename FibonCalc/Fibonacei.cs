@@ -25,14 +25,13 @@ namespace FibonCalc
             static void Program()
             {
 
-                List<int> Fibonaceifolge = new List<int>();
-                Fibonaceifolge.Add(1);
-                Fibonaceifolge.Add(1);
-                
-
                 Console.WriteLine("\nHallo! Welche Stelle der Fibonacei Folge möchtest du wissen?");
                 int n = Convert.ToInt32(Console.ReadLine());
 
+
+                List<int> Fibonaceifolge = new List<int>();
+                Fibonaceifolge.Add(1);
+                Fibonaceifolge.Add(1);
 
                 for (int i = 2; i == (n + 1); i++)
                 {
