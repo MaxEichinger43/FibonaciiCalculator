@@ -39,11 +39,10 @@ namespace FibonCalc
                     Fibonaceifolge.Add(Fibonaceifolge[a-1] + Fibonaceifolge[a-2]);
                     a++;
                 }
-
-//                for (int i = 1; i < Fibonaceifolge.Count; i++)
-//                {
-//                Console.WriteLine(Fibonaceifolge[i-1]);
-//                }
+                
+//Falls alle Stellen bis zur gefragten Eingegebenwerden ausgegeben werden sollen
+//                for (int i = 1; i < Fibonaceifolge.Count; i++){Console.WriteLine(Fibonaceifolge[i-1]);}
+                
 
                 Console.WriteLine("Die " + n + ". Stelle ist eine " + Fibonaceifolge[n - 1]);
                 
