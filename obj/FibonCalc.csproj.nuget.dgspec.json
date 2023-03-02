@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\m.eichinger\\Documents\\FibonCalc\\FibonaceiCalculator\\FibonCalc\\FibonCalc.csproj": {}
+    "C:\\Users\\Der Maxi\\Documents\\GitHub\\FibonaceiCalculator\\FibonCalc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\m.eichinger\\Documents\\FibonCalc\\FibonaceiCalculator\\FibonCalc\\FibonCalc.csproj": {
+    "C:\\Users\\Der Maxi\\Documents\\GitHub\\FibonaceiCalculator\\FibonCalc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\m.eichinger\\Documents\\FibonCalc\\FibonaceiCalculator\\FibonCalc\\FibonCalc.csproj",
+        "projectUniqueName": "C:\\Users\\Der Maxi\\Documents\\GitHub\\FibonaceiCalculator\\FibonCalc.csproj",
         "projectName": "FibonCalc",
-        "projectPath": "C:\\Users\\m.eichinger\\Documents\\FibonCalc\\FibonaceiCalculator\\FibonCalc\\FibonCalc.csproj",
-        "packagesPath": "C:\\Users\\m.eichinger\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\m.eichinger\\Documents\\FibonCalc\\FibonaceiCalculator\\FibonCalc\\obj\\",
+        "projectPath": "C:\\Users\\Der Maxi\\Documents\\GitHub\\FibonaceiCalculator\\FibonCalc.csproj",
+        "packagesPath": "C:\\Users\\Der Maxi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Der Maxi\\Documents\\GitHub\\FibonaceiCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\m.eichinger\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Der Maxi\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
