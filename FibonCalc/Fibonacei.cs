@@ -17,7 +17,7 @@ namespace FibonCalc
                 int n = Convert.ToInt32(Console.ReadLine());
 
 
-                for (int i = 2; i == (n); i++ )
+                for (int i = 2; i == (n+1); i++ )
                 {
                     Fibonaceifolge.Add(Fibonaceifolge[0] + Fibonaceifolge[1]);
                 }
