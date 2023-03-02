@@ -48,7 +48,7 @@ namespace FibonCalc
                 }
 
 //Falls alle Stellen bis zur gefragten Eingegebenwerden ausgegeben werden sollen
-//                for (int i = 1; i < Fibonaceifolge.Count; i++){Console.WriteLine(Fibonaceifolge[i-1]);}
+//                Console.WriteLine("\n.......");for (int i = 1; i < Fibonaceifolge.Count; i++){Console.WriteLine(Fibonaceifolge[i-1]);}
                 
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("Die " + n + ". Stelle ist eine:"); Console.ForegroundColor = ConsoleColor.Green; Console.Write(Fibonaceifolge[n - 1]);
