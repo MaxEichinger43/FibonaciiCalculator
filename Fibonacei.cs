@@ -1,13 +1,20 @@
 using System;
 
-namespace FibonaceiCalculator
+namespace FibonaciiCalculator
 {
-    class Fibonacei
+    public class Fibonacii
     {
 
 
         static void Main(string[] args)
         {
+            Fibonacii fib = new Fibonacii();
+            Console.WriteLine(fib.Recursive(1));
+            Console.WriteLine(fib.Recursive(2));
+            Console.WriteLine(fib.Recursive(3));
+            Console.WriteLine(fib.Recursive(4));
+            Console.WriteLine(fib.Recursive(10));
+
             Console.Title = "Fibonacei Calculator";
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("This is a calculator for numbers of the Fibonacei-Row.");
@@ -29,6 +36,8 @@ namespace FibonaceiCalculator
             }
 
             OutOfTickets();
+
+            
         }
 
         //Reads input parameters
@@ -64,7 +73,12 @@ namespace FibonaceiCalculator
         static void Calculator(bool optionalOutput)
         {
             int targetslot = Input();
+            List<int> Fibonaceifolge = fibonacci(targetslot);
+            Output(optionalOutput, targetslot, Fibonaceifolge);
+        }
 
+        private static List<int> fibonacci(int targetslot)
+        {
             List<int> Fibonaceifolge = new List<int>();
             Fibonaceifolge.Add(1);
             Fibonaceifolge.Add(1);
@@ -75,21 +89,19 @@ namespace FibonaceiCalculator
                 currentslot++;
             }
 
-            Output(optionalOutput, targetslot, Fibonaceifolge);
+            return Fibonaceifolge;
         }
 
         //Outputs the calculatet Result
-        private static void Output(bool optionalOutput, int targetslot, List<int> Fibonaceifolge)
+        private static void Output(bool outputIsOptional, int targetSlot, List<int> fibonaceiFolge)
         {
-            if (optionalOutput == true)
+            if (outputIsOptional)
             {
-                Console.WriteLine("\n......."); for (int i = 1; i < Fibonaceifolge.Count; i++) { Console.WriteLine(Fibonaceifolge[i - 1]); }
+                Console.WriteLine("\n......."); for (int i = 1; i < fibonaceiFolge.Count; i++) { Console.WriteLine(fibonaceiFolge[i - 1]); }
             }
 
-
-
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("The " + targetslot + ". number is:"); Console.ForegroundColor = ConsoleColor.Green; Console.Write(Fibonaceifolge[targetslot - 1]);
+            Console.WriteLine("The " + targetSlot + ". number is:"); Console.ForegroundColor = ConsoleColor.Green; Console.Write(fibonaceiFolge[targetSlot - 1]);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("\n\n-----------------------------------------------------");
         }
@@ -102,6 +114,20 @@ namespace FibonaceiCalculator
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.ReadKey();
+        }
+
+
+        private long?[] cache = new long?[10];
+
+        private long? Recursive(int n) {
+            if (n == 1 || n == 2) {
+                return 1;
+            }
+            
+            if (cache[n-1] == null) {
+                cache[n-1] = Recursive(n - 1) + Recursive(n - 2);
+            }
+            return cache[n-1];
         }
     }
 }
